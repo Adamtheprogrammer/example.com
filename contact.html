@@ -23,5 +23,96 @@
         </nav>
 
        <h1>Adami Walker</h1>
+        <!-- Plain text input -->
+<div>
+        <em>Sample plain text entry</em>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text">
+      </div>
+      <!-- Datepicker -->
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date">
+      
+      <!-- Textarea -->
+      <label for="description">Description</label>
+      <textarea id="description" name="description"></textarea>
+      
+      <!-- Picklist-->
+      <label for="pickOne">Choose an option</label>
+      <select id="pickOne" name="pickone">
+        <option>Please Choose an Option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2" selected>Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      
+      <!-- Radio Options -->
+      <fieldset>
+        <legend>Choose yes or No</legend>
+      
+        <label for="r1">Yes</label>
+        <input id="r1" name="yn" value="y" type="radio">
+      
+        <label for="r2">No</label>
+        <input id="r2" name="yn" value="n" type="radio">
+      </fieldset>
+      
+      <!-- Checkbox Options -->
+      <fieldset>
+        <legend>Choose all that apply</legend>
+        <label for="c1">Option 1</label>
+        <input id="c1" name="all" value="0" type="checkbox">
+      
+        <label for="c2">Option 2</label>
+        <input id="c2" name="all" value="1" type="checkbox">
+      </fieldset>
+      
+      <!-- Form Buttons -->
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" name="reset" value="Reset">
+        <img style="border-radius: 50%; float: right; margin-right: 1em;" src="https://s.gravatar.com/avatar/9b35000c32a7318c89a4ac04e227292c?s=80" alt="My Avatar">
+
+
+
+
+
+
+
+        <form action="https://formspree.io/quarterque2@gmail.com"
+            method="POST">
+            <input type="hidden" name="_next" value="https://adamtheprogrammer.io/thanks.html" />
+            <div>
+                <label for="name">Adam</label> 
+            
+                 <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="_replyto">Email</label> 
+           
+            <input type="email" name="_replyto" id="_replyto">
+            </div>
+            
+            <label for="message"">Ask a question?</label>
+           
+            <textarea col="20" row"10" name="message" id="message></textarea>
+           
+            <label for="color" id="color">What is your favorite color</label>
+
+            <input list="colorList">
+            <datalist id="colorList" name="color">
+
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="brown">brown</option>
+
+            </datalist>
+            <br>
+            <div>
+                    <input type="hidden" name="_subject" value="New submission!">
+            </div>
+
+            <input type="submit" value="Send">
+        </form>
     </body>
 </html>
