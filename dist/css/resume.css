@@ -1,0 +1,91 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-style: italic
+}
+
+section {
+    clear: both;
+}
+
+.intro {
+    text-align: center;
+}
+
+.text-initial {
+    text-transform: initial;
+}
+
+@media only screen and (min-width:960px){
+    .cc-left {
+        float: left;
+        text-align: left;
+        margin-left: 17%;
+        width: 33%;
+        box-sizing: border-box;
+    }
+
+    .cc-right {
+        float: right;
+        text-align: left;
+        width: 33%;
+        font-size: ;
+        margin-right: 17%;
+        box-sizing: border-box;
+    }
+
+    .certs ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+
+
+.emp h3,
+.edu h3 {
+    text-align: left;
+    font-style: normal;
+    clear: both;
+}
+
+.emp h3,
+.emp h4,
+.edu h3,
+.edu h4 {
+    text-transform: initial;
+}
+
+.edu h3{
+   font-weight: normal;
+   font-weight: bold;
+   padding: 0;
+   margin: 0;
+}
+
+.edu h4 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8em;
+    margin-bottom: 1.4rem;
+
+}
+
+.emp 5 {
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom:2em;
+}
+
+.date {
+    float: right;
+
+}
