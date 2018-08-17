@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     
-    <head>
-       <meta charset="UTF-8">
-       <title>Adami Walker</title>
-       <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
-    </head>
+        <head>
+                <meta charset="UTF-8">
+                <title>Adami Walker</title>
+                <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+        </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
-            </ul>
-        </nav>
-       
-        <header>
-             <h1>Adami Walker</h1>
+            <header>
+                    <span class="logo">Adam Walker</span>
+                    <a id="toggleMenu">Menu</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+    
+                </nav>
+          
 
-                <a href="https://www.linkedin.com/in/adam-walker-4585b613b/"
-                    target="_blank"
-                    rel="noopener">
-                        Linkedin
-                </a>
-                        &#x25CF;
-                    
-                <a href="https://www.Github.com/adamtheprogrammer/"
-                    target="_blank"
-                    rel="noopener">
-                        Github
-                </a>
-                        &#x25CF;
 
-                    Chicago, Ill
-                    
-
-        </header>
+            </header>
         
             <main>
                 <h2>Fullstack Web and Hybrid Mobile Application Developer</h2>
@@ -122,5 +107,21 @@
                             <h4>High School Diploma</h4>
                     </section>
             </main>
+
+            <script>
+
+                    var toggleMenu = document.getElementById('toggleMenu');
+                    var nav = document.querySelector('nav');
+                    toggleMenu.addEventListener(
+                        'click',
+                        function(){
+                            if(nav.style.display=='block'){
+                              nav.style.display='none';
+                            }else{
+                              nav.style.display='block';
+                            }
+                          }
+                        );
+                </script>  
     </body>
 </html>

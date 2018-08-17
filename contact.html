@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-       <meta charset="UTF-8">
-       <title>Adami Walker</title>
-       <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-
-    </head>
+        <head>
+                <meta charset="UTF-8">
+                <title>Adami Walker</title>
+                <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+             </head>
 
     <body>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <header>
+                    <span class="logo">Adam Walker</span>
+                    <a id="toggleMenu">Menu</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+    
+                </nav>
+          
 
-        </nav>
 
+            </header>
+        
+        <main>
        <h1>Adami Walker</h1>
 
   
@@ -27,39 +35,44 @@
             <input type="hidden" name="_next" value="https://adamtheprogrammer.io/thanks.html" />
              
              
-            <div>
+            <div class="form-control">
                 <label for="name">Adam</label>
                 <input type="text" name="name" id="name">
             </div>
             
             
-             <div>    
+             <div class="form-control">    
                 <label for="_replyto">Email</label> 
                 <input type="email" name="_replyto" id="_replyto">
             </div>
-            <div>
+            <div class="form-control">
                 <label for="message">Ask a question?</label>
                 <textarea col="20" row"10" name="message" id="message"></textarea>
             </div>
-            <div>
-              <label for="color" id="color">What is your favorite color?</label>
-              <input list="colorList">
-            </div>
-            <div>
-                <datalist id="colorList" name="color">
-                    <option value="red">red</option>
-                    <option value="blue">blue</option>
-                    <option value="green">green</option>
-                    <option value="brown">brown</option>
-                 </datalist>
-             </div>
-            <div>
+            
+            <div class="form-control">
                 <input type="hidden" name="_subject" value="New submission!">
-                 <input type="submit" value="Submit">
+                 <input type="submit" value="Send">
             </div>
 
             
 
         </form>
+</main>
+        <script>
+
+                var toggleMenu = document.getElementById('toggleMenu');
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                    'click',
+                    function(){
+                        if(nav.style.display=='block'){
+                          nav.style.display='none';
+                        }else{
+                          nav.style.display='block';
+                        }
+                      }
+                    );
+            </script> 
     </body>
 </html>
