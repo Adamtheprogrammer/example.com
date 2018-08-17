@@ -71,7 +71,6 @@ label {
 .form-control textarea {
     padding: 0.7em;
     display: block;
-    
     font-size: 2em;
     padding: .5rem;
     margin-bottom: 1rem;
@@ -80,9 +79,7 @@ label {
 .form-control input[type="text"],
 .form-control input[type="email"],
 .form-control textarea {
-    
     width: 100%;
-  
 }
 
 #toggleMenu{
