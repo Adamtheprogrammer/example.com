@@ -22,7 +22,7 @@ gulp.task('build-css', function(){
     
     var resume = gulp.src([
         'src/scss/main.scss',
-        'src/scss/mresume.scss'
+        'src/scss/resume.scss'
     ])
     . pipe(scss())
     . pipe(cleanCSS())

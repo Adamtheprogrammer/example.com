@@ -1,3 +1,8 @@
+
+body{
+    background: #E7EBEC;
+}
+
 h1,
 h2,
 h3 {
@@ -15,6 +20,7 @@ section {
 
 .intro {
     text-align: center;
+    
 }
 
 .text-initial {
@@ -34,7 +40,7 @@ section {
         float: right;
         text-align: left;
         width: 33%;
-        font-size: ;
+        
         margin-right: 17%;
         box-sizing: border-box;
     }
@@ -79,10 +85,10 @@ section {
 
 }
 
-.emp 5 {
+.emp {
     font-style: italic;
     font-size: 1.8rem;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
 }
 
 .date {

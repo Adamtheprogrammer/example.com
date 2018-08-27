@@ -11,7 +11,8 @@ header {
   color: #fff; }
 
 span a {
-  list-style: none; }
+  list-style: none;
+ }
 
 header .logo {
   line-height: 50px;
@@ -22,6 +23,8 @@ header nav {
   display: none;
   background: #000;
   z-index: 1000; }
+
+ 
 
 header nav ul {
   margin: 0px;

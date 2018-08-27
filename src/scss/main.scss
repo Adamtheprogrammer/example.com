@@ -6,6 +6,7 @@
 body {
     padding: 0;
     margin: 0;
+    background: #E7EBEC;
 }
 
 header {
@@ -15,12 +16,30 @@ header {
 
 span a {
     list-style: none;
+    
 }
+
+.logo a,
+.logo a:link,
+.logo a:visited
+ {
+    padding: 0 .5em;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+
+}
+
+
 
 header .logo {
     line-height: 50px;
     font-weight: bold;
     padding: 0 .5em 0 1em;
+}
+
+header .logo a{
+    list-style: none;
 }
 
 header nav {
@@ -35,6 +54,20 @@ header nav ul {
     list-style: none;
 }
 
+
+#change{
+   color: red;
+}
+
+#codePic{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
 header nav ul li a,
 header nav ul li a:link,
@@ -69,9 +102,19 @@ label {
    
 }
 
+form{
+    background-image: url("../../img/mail.png");
+    background-size: 65vw 55vw;
+    background-repeat: no-repeat;
+    background-position-y: -70px;
+
+
+}
+
+
+
 
 .form-control input,
-
 .form-control textarea {
     padding: 0.7em;
     display: block;
@@ -84,6 +127,7 @@ label {
 .form-control input[type="email"],
 .form-control textarea {
     width: 100%;
+    opacity: 0.5;
 }
 
 #toggleMenu{
@@ -106,7 +150,7 @@ label {
     header{
         height: 50px;
     }
-    
+   
     header nav{
         display: block;
         float: right;
@@ -147,5 +191,31 @@ label {
         display: none;
     }
 
+
+    
+
+}
+
+
+
+@media only screen and (max-width:768px){
+  form{
+    background-image: url("../../img/mail.png");
+    background-size: 65vw 55vw;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 40px;
+  }
+}
+
+@media only screen and (max-width:1400px){
+    form{
+    background-image: url("../../img/mail.png");
+    background-size: 65vw 55vw;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 40px;
+    
+    }
 
 }

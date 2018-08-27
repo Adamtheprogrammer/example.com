@@ -34,7 +34,6 @@ section {
         float: right;
         text-align: left;
         width: 33%;
-        font-size: ;
         margin-right: 17%;
         box-sizing: border-box;
     }
@@ -79,7 +78,7 @@ section {
 
 }
 
-.emp 5 {
+.emp h5 {
     font-style: italic;
     font-size: 1.8rem;
     margin-bottom: .2em;
