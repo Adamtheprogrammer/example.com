@@ -130,6 +130,73 @@ form{
     opacity: 0.5;
 }
 
+
+/*Grid*/
+
+.grid {
+    display: block;
+
+}
+
+.col{
+    display: block;
+
+}
+
+.card{
+    border: 1px solid #444;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.card:first-child{
+    margin-left: 0;
+}
+
+
+.card:first-child{
+    margin-left: 0;
+}
+
+.card h3{
+    margin: 0;
+}
+
+.card .card-controls a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    border: 1px solid #444;
+    font-weight: bold;
+    color:#444;
+    border-radius: 4px;
+}
+
+
+@media only screen and (min-width:640px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+
+    .col{
+        grid-row: 1;
+    }
+
+    .card:first-child{
+        margin-left: 0;
+    }
+    
+    
+    .card:first-child{
+        margin-left: 0;
+    }
+
+}
+
+
 #toggleMenu{
     display: block;
     float: right;
