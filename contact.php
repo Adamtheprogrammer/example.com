@@ -2,9 +2,15 @@
 <?php 
 
 include 'core/Adam/src/Validation/Validate.php';
+include 'vendor/autoload.php';
+include '../config/keys.php';
 
 use Adam\Validation;
     $valid = new Adam\validation\Validate();
+
+    
+    use Mailgun\Mailgun;   
+
 
     $filters = [
         'name'=>FILTER_SANITIZE_STRING,
@@ -86,12 +92,31 @@ use Adam\Validation;
 
             $valid->check($input);
             if(!empty($valid->errors)){
-                $message = '<div>Your form has been submitted</div>';
-                header('LOCATION: thanks.php');
+
+                # Include the Autoloader (see "Libraries" for install instructions)
+               
+
+                # Instantiate the client.
+                $mgClient = new Mailgun(MG_KEY);
+
+
+                # Make the call to the client.
+                $result = $mgClient->sendMessage(MG_DOMAIN,
+                        array('from'    => "{$input['name']} <{$input['email']}>",
+
+                                'to'      => 'YOUR-NAME <quarterque2@gmail.com>',
+                                'subject' => 'Hello Adami',
+                                'text'    => $input['message']));
+
+                if($result->http_response_code == 200){
+                    return header('LOCATION: thanks.php');
+                }
+                
+              
 
             }else{
                 $message = '<div style="color:#ff0000">Your form has errors!</div>';
-            }
+        }
     }
 
     
@@ -123,7 +148,7 @@ use Adam\Validation;
             </header>
         <main>
 
-        <?php echo (!empty($message)?message:null);?>
+        <?php echo (!empty($message)?$message:null);?>
        <h1>Adami Walker</h1>
 
   
