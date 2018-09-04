@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    
-        <head>
-                <meta charset="UTF-8">
-                <title>Adami Walker</title>
-                <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" type="text/css" href="dist/css/resume.min.css">
-        </head>
+<?php 
+$meta = [];
+$meta['title']='Adami Walker';
+$meta['description']='Developing the future one day at a time';
+$meta['keywords']='AdamWalker, FullStack , Mobile Developer';
+$content = <<<EQT
 
-    <body>
-            <header>
-                    <span class="logo"><a href="index.php">Adam Walker</a></span>
-                    <a id="toggleMenu">Menu</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="resume.php">Resume</a></li>
-                        <li><a href="contact.php">Contact</a></li>
-                    </ul>
-                </nav>
-          
-
-
-            </header>
         <main>
             <section class="intro">
                 <h1>Adam Walker</h1>
@@ -136,5 +118,6 @@
                           }
                         );
              </script>  
-    </body>
-</html>
+EQT;
+
+include '../core/layout.php';
