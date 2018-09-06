@@ -18,7 +18,7 @@
 
        
 
-       <link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+       <link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
        <style>
@@ -35,9 +35,10 @@
                 <a id="toggleMenu">Menu</a>
             <nav>
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="resume.php">Resume</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="/.php">Home</a></li>
+                    <li><a href="/resume.php">Resume</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
+                    <li><a href="/posts">Blog</a></li>
                 </ul>
 
             </nav>
