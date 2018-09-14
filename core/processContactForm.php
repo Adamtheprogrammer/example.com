@@ -8,8 +8,7 @@ include '../../config/keys.php';
 use Adam\Validation;
 use Mailgun\Mailgun;
     $valid = new Adam\validation\Validate();
-
-
+    
     $filters = [
         'name'=>FILTER_SANITIZE_STRING,
         'email'=>FILTER_SANITIZE_STRING,

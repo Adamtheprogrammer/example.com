@@ -14,7 +14,7 @@ if(!empty($input)){
         $slug,
         $input['body']
     ])){
-       header('LOCATION:\posts.php'); 
+       header('LOCATION:\posts'); 
     }else{
         $message = 'Something bad happened';
     }
